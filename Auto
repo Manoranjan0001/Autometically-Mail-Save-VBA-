@@ -1,0 +1,28 @@
+Public Sub saveAttachtoDisk(itm As Outlook.MailItem)
+    Dim objAtt As Outlook.Attachment
+    Dim saveFolder As String
+    Dim dateFormat As String
+    saveFolder = "C:\Users\manor\Downloads\Automation Project TechM\"
+    dateFormat = Format(Now, "yyyy-mm-dd-")
+
+    For Each objAtt In itm.Attachments
+        objAtt.SaveAsFile saveFolder & "\" & dateFormat & objAtt.DisplayName
+        Set objAtt = Nothing
+    Next
+End Sub
+
+Public Sub saveAttachtoDiskInt(itm As Outlook.MailItem)
+    Dim objAtt As Outlook.Attachment
+    Dim saveFolder As String
+    Dim dateFormat As String
+    saveFolder = "C:\Users\manor\Downloads\Automation Project TechM\Interaction Level Data\"
+    'dateFormat = Format(Now, "yyyy-mm-dd-")
+
+    
+
+    For Each objAtt In itm.Attachments
+        objAtt.SaveAsFile saveFolder & "\" & dateFormat & objAtt.DisplayName
+        Set objAtt = Nothing
+    Next
+End Sub
+
