@@ -26,3 +26,7 @@ Public Sub saveAttachtoDiskInt(itm As Outlook.MailItem)
     Next
 End Sub
 
+'Large_project_id
+expungebob
+/
+SQL-Large-Coding-Projects
